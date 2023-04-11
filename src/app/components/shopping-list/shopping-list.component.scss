@@ -1,0 +1,139 @@
+.Shopping-section{
+  margin: 0 auto;
+  margin-top: 25px;
+  transition-duration: 1s;
+  opacity: 1;
+  width: 90%;
+  height: 90%;
+  border:1px solid black;
+}
+.Shopping-menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333333;
+  color: white;
+  width: 100%;
+  height: 35px;
+}
+.Shopping-menu button{
+  transition-duration: 0.5s;
+  height: 30px;
+  width: 100px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: transparent;
+  margin: 0 25px;
+}
+.Shopping-menu button:hover{
+  transition-duration: 0.5s;
+  background-color: white;
+  color: #333333;
+}
+.Items{
+  width: 100%;
+  height: 100%;
+  background-color: white
+}
+app-shopping-item{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 720px) {
+  app-shopping-item{
+    margin: 0 auto;
+    width: 700px;
+  }
+}
+.Shopping-section{
+  background-color: white;
+}
+.BasketBody{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 10px;
+}
+.basketItem{
+  width: 240px;
+  height: 300px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: #333333 1px 2px 4px;
+}
+.BasketImage{
+  display: flex;
+  flex-direction: row;
+}
+.CheckoutButton{
+  margin: 0 auto;
+  transition-duration: 0.5s;
+  height: 30px;
+  width: 100px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: #333333;
+}
+.CheckoutButton:hover{
+  color: black;
+  border: black 1px solid;
+  background-color: white;
+}
+.Form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  transition-duration: 1s;
+  position: absolute;
+  width: 100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+}
+.form-item{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0px;
+}
+.form-item input{
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 50px;
+  border:none;
+  box-shadow: 1px 1px 5px #333333;
+}
+.form-item label{
+  margin: 10px 0px;
+}
+.form-item input:focus{
+  transition-duration: 1s;
+  background-color: #333333;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 50px;
+  border:white 1px solid;
+  box-shadow: 1px 1px 5px white;
+}
+.buttonsFormItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

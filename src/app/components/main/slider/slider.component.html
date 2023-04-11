@@ -1,0 +1,24 @@
+<div class="slider">
+  <div class="slider-images">
+    <a [ngClass]="{'visibleSlider':isVisibleSliderImage1, 'notVisibleSlider': !isVisibleSliderImage1}"> <img
+      *ngIf="isVisibleSliderImage1" height="200px" class="slider-image"
+      src="https://www.mahshev.co.il/wp-content/uploads/2020/12/9599.gif"
+      alt="slider-image">
+    </a>
+    <a [ngClass]="{'visibleSlider':isVisibleSliderImage2, 'notVisibleSlider': !isVisibleSliderImage2}"> <img
+      *ngIf="isVisibleSliderImage2" height="200px" class="slider-image"
+      src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/43/1477591719-macbook-pro-gif.gif"
+      alt="">
+
+    </a>
+    <a [ngClass]="{'visibleSlider':isVisibleSliderImage3, 'notVisibleSlider': !isVisibleSliderImage3}">
+      <img *ngIf="isVisibleSliderImage3" height="200px" class="slider-image"
+           src="https://media.tenor.com/QIfbrDoDodcAAAAd/apple-apple-watch.gif"
+           alt="">
+    </a>
+  </div>
+  <div class="slider-controls">
+    <button (click)="previusSliderImage()"><</button>
+    <button (click)="nextSliderImage()">></button>
+  </div>
+</div>

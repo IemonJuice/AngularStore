@@ -1,0 +1,81 @@
+<section class="Shopping-section">
+  <div class="Shopping-menu">
+    <button
+      (click)="isBasketVisible = false; getItems($event);MacBooksIsVisible = true; IPhonesIsVisible = false; OtherIsVisible = false">
+      MacBooks
+    </button>
+    <button
+      (click)=" isBasketVisible = false; getItems($event);IPhonesIsVisible = true; MacBooksIsVisible = false; OtherIsVisible = false">
+      IPhones
+    </button>
+    <button
+      (click)="isBasketVisible = false; getItems($event);OtherIsVisible = true; IPhonesIsVisible = false; MacBooksIsVisible = false">
+      Other
+    </button>
+    <a (click)="isBasketVisible = false; showBasket()" style="cursor: pointer" class="BasketImage">
+      <div *ngIf="cartItemCount>0">{{cartItemCount}}</div>
+      <img width="25px" style="margin-right: 10px"
+           class="navImage basket"
+           src="assets/basket.png" alt=""></a>
+  </div>
+  <div *ngIf="!isBasketVisible" style="height: 100%">
+    <div *ngIf="MacBooksIsVisible" class="Items">
+      <app-shopping-item (eventALL)="getAllData($event)" (eventToBasket)="getIndex($event)"
+                         (eventFromChild)="increment($event)" [isMacBooks]="MacBooksIsVisible"></app-shopping-item>
+    </div>
+    <div *ngIf="IPhonesIsVisible" class="Items">
+      <app-shopping-item (eventALL)="getAllData($event)" (eventToBasket)="getIndex($event)"
+                         (eventFromChild)="increment($event)" [isIPhones]="IPhonesIsVisible"></app-shopping-item>
+    </div>
+    <div *ngIf="OtherIsVisible" class="Items">
+      <app-shopping-item (eventALL)="getAllData($event)" (eventToBasket)="getIndex($event)"
+                         (eventFromChild)="increment($event)"
+                         [isOther]="OtherIsVisible"></app-shopping-item>
+    </div>
+  </div>
+  <div *ngIf="isBasketVisible" class="BasketBody">
+    <div *ngIf="itemsToBasket.length===0">Basket is empty :(</div>
+    <div class="basketItem" *ngFor="let item of itemsToBasket;let i = index">
+      {{item.basketItem.name}}
+      <div style="width: 100%; height: 90%; display: flex;flex-direction:column; justify-content: space-around">
+        <div>
+          <img width="100px" src="{{item.basketItem.url}}" alt="">
+        </div>
+        <div>
+          {{item.basketItem.price | currency}}
+        </div>
+        <div>
+          {{item.basketItem.Properties }}
+        </div>
+        <div>
+          <button (click)="deleteItemFromBasket(i)" class="CheckoutButton">delete item</button>
+        </div>
+      </div>
+    </div>
+    <button *ngIf="itemsToBasket.length!==0" (click)="showForm()" class="CheckoutButton" style="margin-top: 10px">Checkout</button>
+      <div *ngIf="isFormVisible" class="Form">
+        <form action="#" method="post">
+          <div class="form-item">
+            <label>Full Name</label>
+          <input required minlength="3" placeholder="Full Name..." type="text">
+          </div>
+          <div class="form-item">
+            <label>Phone Number</label>
+            <input required  minlength="3" placeholder="Phone Number..." type="tel">
+          </div>
+          <div class="form-item">
+            <label>e-mail</label>
+            <input required minlength="5" placeholder="e-mail..." type="email">
+          </div>
+          <div class="form-item">
+            <label>Delivery location Country/City/Street</label>
+            <input required minlength="3" placeholder="Location..." type="text">
+          </div>
+            <div class="form-item buttonsFormItem">
+          <button class="CheckoutButton" type="submit">Confirm</button>
+          <button class="CheckoutButton" (click)="closeForm()">Cancel</button>
+            </div>
+        </form>
+      </div>
+  </div>
+</section>

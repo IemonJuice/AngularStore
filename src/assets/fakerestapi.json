@@ -1,0 +1,105 @@
+{
+  "MacBooks": [
+    {
+      "name": "MacBook Pro 13",
+      "price": 1499,
+      "Properties": "good for programming",
+      "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-silver-select-202206?wid=986&hei=980&fmt=jpeg&qlt=90&.v=1664497095569",
+      "id": 1
+    },
+    {
+      "name": "MacBook Air 15",
+      "price": 850,
+      "Properties": "good for design",
+      "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-silver-select-202206?wid=986&hei=980&fmt=jpeg&qlt=90&.v=1664497095569"
+    },
+    {
+      "name": "MacBook Air 13",
+      "price": 749,
+      "Properties": "thickest laptop which i ever seen",
+      "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-silver-select-202206?wid=986&hei=980&fmt=jpeg&qlt=90&.v=1664497095569"
+
+    },
+    {
+      "name": "MacBook Pro 15",
+      "price": 1749,
+      "Properties": "good for all purposes",
+      "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-silver-select-202206?wid=986&hei=980&fmt=jpeg&qlt=90&.v=1664497095569"
+    },
+    {
+      "name": "MacBook Pro M1",
+      "price": 1600,
+      "Properties": "Powerful laptop",
+      "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-silver-select-202206?wid=986&hei=980&fmt=jpeg&qlt=90&.v=1664497095569",
+      "id": 2
+    },
+    {
+      "name": "MacBook Air M2",
+      "price": 1550,
+      "Properties": "Very Powerful laptop",
+      "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-silver-select-202206?wid=986&hei=980&fmt=jpeg&qlt=90&.v=1664497095569",
+      "id": 3
+    }
+  ],
+  "Iphones": [
+    {
+      "name": "IPhone XR",
+      "price": 400,
+      "Properties": "good cheap phone",
+      "url": "https://isweet.com.ua/content/images/13/398x480l50nn0/apple-iphone-xr-black-64gb-84538601387170.png",
+      "id": 1
+    },
+    {
+      "name": "IPhone 11",
+      "price": 650,
+      "Properties": "good phone if you are millioner",
+      "url": "https://content2.rozetka.com.ua/goods/images/big/37357013.jpg",
+      "id": 2
+    },
+    {
+      "name": "Iphone 12 PRO",
+      "price": 749,
+      "Properties": "Good phone if you are billioner",
+      "url": "https://luxmobile.com.ua/image/cache/catalog/iphone12/1.12pro/5-1000x1340.jpg",
+      "id": 3
+    },
+    {
+      "name": "IPhone 14",
+      "price": 949,
+      "Properties": "Good phone if you are trillioner",
+      "url": "https://i.citrus.world/imgcache/size_800/uploads/shop/2/8/2887dfaae78fc398796c21c3a9e3f7c2.jpg",
+      "id": 4
+    }
+  ],
+  "Other": [
+    {
+      "name": "AirPods 2017",
+      "price": 100,
+      "Properties": "excellent  headphones ",
+      "url": "https://content1.rozetka.com.ua/goods/images/big/14270995.jpg",
+      "id": 1
+    },
+    {
+      "name": "Apple Watch SE",
+      "price": 250,
+      "Properties": "excellent watch",
+      "url": "https://img.joomcdn.net/8f22ae6b5ee631d791e4bc85737ab480f8001517_original.jpeg",
+      "id": 2
+    },
+    {
+      "name": "AirPods Pro",
+      "price": 300,
+      "Properties": "excellent headphones if you have 10 billion dollars",
+      "url": "https://cc.dn.ua/upload/iblock/0c1/7p0zyq7n5iijkws1dnzl5qmbht67aqbn.jpeg",
+      "id": 3
+    },
+    {
+      "name": "AirPods Max",
+      "price": 450,
+      "Properties": "excellent headphones if you have 100 billion dollar",
+      "url": "https://idom.kiev.ua/image/AirPods/AirPods-Max/apple-airpods-max-green-photo.jpg",
+      "id": 4
+    }
+
+  ]
+}

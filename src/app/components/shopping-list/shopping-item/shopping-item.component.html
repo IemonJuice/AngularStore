@@ -1,0 +1,8 @@
+<div [ngClass]="{'MoreSpace':isIPhones}" class="Item" *ngFor="let item of data; let i = index">
+  <div><img height="100px" src="{{item.url}}" alt=""></div>
+  <div> {{item.name}}</div>
+  <div class="price">{{item.price |currency|uppercase}}</div>
+  <div class="buy">
+    <button (click)="getIndex(i);increaseQuantity();  getAll()"><a>buy</a></button>
+  </div>
+</div>

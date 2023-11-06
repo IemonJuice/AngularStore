@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {DataService} from "../../event.service";
 
-// @ts-ignore
+
 @Component({
   selector: 'app-shopping-list',
   templateUrl: './shopping-list.component.html',
